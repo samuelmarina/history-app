@@ -13,6 +13,10 @@
 		8A4B082D280D09D200D4D307 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B082B280D09D200D4D307 /* Main.storyboard */; };
 		8A4B082F280D09D400D4D307 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B082E280D09D400D4D307 /* Assets.xcassets */; };
 		8A4B0832280D09D400D4D307 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A4B0830280D09D400D4D307 /* LaunchScreen.storyboard */; };
+		8A4B083E280D0A4D00D4D307 /* HistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B083D280D0A4D00D4D307 /* HistoryManager.swift */; };
+		8A4B0840280D0E7E00D4D307 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B083F280D0E7E00D4D307 /* HistoryModel.swift */; };
+		8A4B0842280D10C000D4D307 /* HistoryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B0841280D10C000D4D307 /* HistoryData.swift */; };
+		8AEB53012810FFC7007C2FCD /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB53002810FFC6007C2FCD /* HistoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8A4B082E280D09D400D4D307 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A4B0831280D09D400D4D307 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A4B0833280D09D400D4D307 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A4B083D280D0A4D00D4D307 /* HistoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryManager.swift; sourceTree = "<group>"; };
+		8A4B083F280D0E7E00D4D307 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		8A4B0841280D10C000D4D307 /* HistoryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryData.swift; sourceTree = "<group>"; };
+		8AEB53002810FFC6007C2FCD /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,41 @@
 			children = (
 				8A4B0825280D09D200D4D307 /* AppDelegate.swift */,
 				8A4B0827280D09D200D4D307 /* SceneDelegate.swift */,
-				8A4B0829280D09D200D4D307 /* ViewController.swift */,
-				8A4B082B280D09D200D4D307 /* Main.storyboard */,
+				8A4B083C280D0A0A00D4D307 /* Model */,
+				8A4B083B280D0A0200D4D307 /* View */,
+				8A4B0839280D09E400D4D307 /* Controller */,
 				8A4B082E280D09D400D4D307 /* Assets.xcassets */,
 				8A4B0830280D09D400D4D307 /* LaunchScreen.storyboard */,
 				8A4B0833280D09D400D4D307 /* Info.plist */,
 			);
 			path = "History App";
+			sourceTree = "<group>";
+		};
+		8A4B0839280D09E400D4D307 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A4B0829280D09D200D4D307 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A4B083B280D0A0200D4D307 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A4B082B280D09D200D4D307 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A4B083C280D0A0A00D4D307 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A4B083D280D0A4D00D4D307 /* HistoryManager.swift */,
+				8A4B083F280D0E7E00D4D307 /* HistoryModel.swift */,
+				8A4B0841280D10C000D4D307 /* HistoryData.swift */,
+				8AEB53002810FFC6007C2FCD /* HistoryCell.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4B083E280D0A4D00D4D307 /* HistoryManager.swift in Sources */,
+				8AEB53012810FFC7007C2FCD /* HistoryCell.swift in Sources */,
+				8A4B0840280D0E7E00D4D307 /* HistoryModel.swift in Sources */,
+				8A4B0842280D10C000D4D307 /* HistoryData.swift in Sources */,
 				8A4B082A280D09D200D4D307 /* ViewController.swift in Sources */,
 				8A4B0826280D09D200D4D307 /* AppDelegate.swift in Sources */,
 				8A4B0828280D09D200D4D307 /* SceneDelegate.swift in Sources */,
